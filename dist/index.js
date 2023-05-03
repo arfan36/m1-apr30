@@ -1,3 +1,3 @@
 "use strict";
 const course = "Next Level  Course";
-console.log("🚀 ~ course:", course);
+// console.log("🚀 ~ course:", course);

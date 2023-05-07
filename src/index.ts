@@ -1,12 +1,12 @@
-let course: string = "Next Level Course";
-let rollNumber: number = 123;
-let isAdmin: boolean = true;
+// let course: string = "Next Level Course";
+// let rollNumber: number = 123;
+// let isAdmin: boolean = true;
 
-// Primitive types
-// string
-// number
-// boolean
-// null
-// undefined
+// // Primitive types
+// // string
+// // number
+// // boolean
+// // null
+// // undefined
 
-// bigint , symbol
+// // bigint , symbol

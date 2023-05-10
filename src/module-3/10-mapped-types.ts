@@ -1,49 +1,49 @@
-const arrayOfNumbers = [1, 2, 3]; // ['1', '2', '3']
-const arrayOfStrings = arrayOfNumbers.map((number) => number.toString());
-console.log("🚀 ~ arrayOfStrings:", arrayOfStrings);
+// const arrayOfNumbers = [1, 2, 3]; // ['1', '2', '3']
+// const arrayOfStrings = arrayOfNumbers.map((number) => number.toString());
+// console.log("🚀 ~ arrayOfStrings:", arrayOfStrings);
 
-type Volume = {
-	height: number;
-	width: string;
-	depth: number;
-};
-
-// type Area = {
-// 	[key in "height" | "width"]: string;
+// type Volume = {
+// 	height: number;
+// 	width: string;
+// 	depth: number;
 // };
 
-type Area<T> = {
-	// [key in keyof Volume]: Volume[key]; // Volume['width'] --> number
-	readonly [key in keyof T]: T[key];
-};
+// // type Area = {
+// // 	[key in "height" | "width"]: string;
+// // };
 
-const area1: Area<{ height: number; width: string }> = {
-	height: 10,
-	width: "10",
-};
-// area1.height = 14;
+// type Area<T> = {
+// 	// [key in keyof Volume]: Volume[key]; // Volume['width'] --> number
+// 	readonly [key in keyof T]: T[key];
+// };
 
-type AreaString = {
-	height: string;
-	width: string;
-};
+// const area1: Area<{ height: number; width: string }> = {
+// 	height: 10,
+// 	width: "10",
+// };
+// // area1.height = 14;
 
-type AreaReadOnly = {
-	readonly height: number;
-	readonly width: number;
-};
+// type AreaString = {
+// 	height: string;
+// 	width: string;
+// };
 
-const rectangularArea: AreaReadOnly = {
-	height: 10,
-	width: 12,
-};
+// type AreaReadOnly = {
+// 	readonly height: number;
+// 	readonly width: number;
+// };
 
-// rectangularArea.width = 10;
+// const rectangularArea: AreaReadOnly = {
+// 	height: 10,
+// 	width: 12,
+// };
 
-// type A = AreaNumber["height"]; // look up types
-// type B = AreaNumber; // 'width' | 'height
+// // rectangularArea.width = 10;
 
-const obj = {
-	name: "Persian",
-};
-obj["name"]; // 'Persian'
+// // type A = AreaNumber["height"]; // look up types
+// // type B = AreaNumber; // 'width' | 'height
+
+// const obj = {
+// 	name: "Persian",
+// };
+// obj["name"]; // 'Persian'

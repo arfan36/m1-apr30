@@ -1,5 +1,5 @@
-// // normal function
-// // default parameters
+// //~ normal function
+// //# default parameters
 
 // function add(num1: number, num2: number = 10): number {
 // 	return num1 + num2;
@@ -7,7 +7,7 @@
 
 // add(30, 50);
 
-// // spread operator
+// //# spread operator
 // const myFriends = ["chandler", "joey", "ross"];
 // const newFriends = ["monica", "rachel", "phoebe"];
 // const myBestFriend = {
@@ -15,15 +15,15 @@
 // 	age: 24,
 // };
 
-// const [bestFriend] = myFriends;
-// const { fullName: string } = myBestFriend;
+// const [bestFriend, f2, f3] = myFriends; // array destructuring -> first index first
+// const { fullName: string } = myBestFriend; // object destructuring
 
-// console.log({ string });
+// console.log({ string }); // string -> name alias(variable)
 
 // myFriends.push(...newFriends);
 // // console.log("🚀 ~ myFriends:", myFriends);
 
-// // rest parameters
+// //#  rest parameters
 // const greatFriends = (...friends: string[]): void =>
 // 	friends.forEach((friend) => console.log(`Hi ${friend}`));
 
@@ -36,7 +36,7 @@
 // 	"english vai"
 // );
 
-// // array and object destructuring
+// //# array and object destructuring
 
 // const arr = [1, 4, 5, 7];
 // const newArray = arr.map((elem: number) => elem * elem);

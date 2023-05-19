@@ -13,10 +13,11 @@
 // 	experience: number;
 // };
 
+// //# enum type
 // // enum Level {
-// // 	junior = "junior",
-// // 	mid = "mid",
-// // 	senior = "senior",
+// // 	junior = "junior", // default value-> junior = 0;
+// // 	mid = "mid", // default value-> mid = 1;
+// // 	senior = "senior", // default value-> senior =2
 // // }
 
 // type NextLevelDeveloper = JuniorDeveloper & {

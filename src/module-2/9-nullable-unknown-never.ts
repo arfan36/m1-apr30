@@ -12,13 +12,13 @@
 // const getMyCarSpeed = (speed: unknown) => {
 // 	if (typeof speed === "number") {
 // 		const convertedSpeed = (speed * 1000) / 3600;
-// 		console.log(`My speed is ${convertedSpeed}`);
+// 		console.log(`My speed is ${convertedSpeed} ms^-1`);
 // 	}
 // 	if (typeof speed === "string") {
 // 		const [value, unit] = speed.split(" "); // ['10', 'kmh^-1']
 
 // 		const convertedSpeed = (parseFloat(value) * 1000) / 3600;
-// 		console.log(`My speed is ${convertedSpeed}`);
+// 		console.log(`My speed is ${convertedSpeed} ms^-1`);
 // 	} else {
 // 		console.log("There is wrong type");
 // 	}
@@ -31,4 +31,4 @@
 // 	throw new Error(message);
 // }
 
-// throwError("Bhai bhai error hoyeche, kandi dimu");
+// // throwError("Bhai bhai error hoyeche, kandi dimu");

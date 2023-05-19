@@ -11,19 +11,19 @@
 // // console.log(isAdult);
 
 // //# Nullish Coalescing Operator
-// // Null and undefined
+// // only apply on //# Null and undefined
 // const isAuthenticatorUser = "";
 // const userName = isAuthenticatorUser ?? "Guest";
 // const userName2 = isAuthenticatorUser ? isAuthenticatorUser : "Guest2";
-// // console.log({ userName }, { userName2 });
+// console.log({ userName }, { userName2 });
 
 // type Manush = {
 // 	name: string;
 // 	age: number;
 // 	address: {
-// 		city: "No City";
-// 		road: "No Road";
-// 		home?: "";
+// 		city: "No City"; // This is called literal type
+// 		road: "No Road"; // This is called literal type
+// 		home?: ""; // This is called optional
 // 	};
 // };
 
@@ -35,5 +35,6 @@
 // 		road: "No Road",
 // 	},
 // };
-// const home = manush?.address?.home ?? "No Home"; // default 'No Home'
+// const home = manush?.address?.home ?? "No Home"; // default 'No Home';
+// // We can use optional chaining and nullish coalescing operator at a same time
 // console.log({ home });

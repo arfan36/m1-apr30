@@ -1,17 +1,17 @@
-// function getArrayItem<T, K extends keyof T>(
-// 	arr: T[],
-// 	index: number,
-// 	key: K
-// ): T[K] {
-// 	const item = arr[index];
-// 	return item[key];
-// }
+function getArrayItem<T, K extends keyof T>(
+	arr: T[],
+	index: number,
+	key: K
+): T[K] {
+	const item = arr[index];
+	return item[key];
+}
 
-// interface Person {
-// 	name: string;
-// 	age: number;
-// 	email: string;
-// }
+interface Person_c8 {
+	name: string;
+	age: number;
+	email: string;
+}
 
 // const people: Person[] = [
 // 	{ name: "Alice", age: 25, email: "alice@example.com" },
@@ -36,13 +36,13 @@
 .
 .*/
 
-// What will be the type of the fullName function?
-interface Person {
+//# What will be the type of the fullName function?
+interface Person_c8 {
 	firstName: string;
 	lastName: string;
 }
 
-function fullName<T extends Person>(person: T): string {
+function fullName<T extends Person_c8>(person: T): string {
 	return `${person.firstName} ${person.lastName}`;
 }
 

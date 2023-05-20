@@ -1,4 +1,4 @@
-class BankAccount {
+class BankAccount_c6 {
 	public readonly id: number;
 	public name: string;
 	private _balance: number;
@@ -34,14 +34,14 @@ class BankAccount {
 	// }
 }
 
-class StudentAccount extends BankAccount {
+class StudentAccount_c6 extends BankAccount_c6 {
 	test() {
 		this.Test;
 	}
 }
 
-const myAccount = new BankAccount(444, "Persian", 30);
+const myAccount_c6 = new BankAccount_c6(444, "Persian", 30);
 // myAccount.balance = 0;
-console.log(myAccount.balance);
-myAccount.deposit = 30;
-console.log(myAccount.balance);
+console.log(myAccount_c6.balance);
+myAccount_c6.deposit = 30;
+console.log(myAccount_c6.balance);

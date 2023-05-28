@@ -17,7 +17,7 @@ function kgToGram(param: string | number): string | number | undefined {
 }
 
 // const resultToBeNumber = kgToGram(1000) as number;
-const resultToBeNumber = <string>kgToGram(1000); //# same as previous line
+const resultToBeNumber = <number>kgToGram(1000); //# same as previous line
 const resultToBeString = <string>kgToGram("1000");
 
 type CustomErrorType = {

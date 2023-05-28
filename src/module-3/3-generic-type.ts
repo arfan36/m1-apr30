@@ -1,4 +1,4 @@
-type GenericTuple<X, Y> = [X, Y];
+type GenericTuple<X, Y> = [X, Y]; //# X, Y can be number, string, boolean etc
 
 const relation: GenericTuple<string, string> = ["Persian", "Kate Winslet"];
 
@@ -25,7 +25,12 @@ const relationWithSalary2: GenericTuple<RelationWithSalaryInterface, string> = [
 
 type GenericArray<T> = Array<T>;
 
+const rollNumbers_t_b3: number[] = [44, 12, 4];
+const rollNumbers_t2_b3: Array<number> = [44, 12, 4]; //# same as previous line
 const rollNumbers_b3: GenericArray<number> = [44, 12, 4];
+
+// const rollNumbers2: string[] = ["44", "12", "4"];
+// const rollNumbers2: Array<string> = ["44", "12", "4"];
 const rollNumbers2: GenericArray<string> = ["44", "12", "4"];
 const rollNumbers3: GenericArray<Boolean> = [true, false];
 

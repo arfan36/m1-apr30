@@ -29,5 +29,5 @@ const myInfo_b6 = {
 	other2: null,
 };
 
-const result_b6 = addMeInMyCrushMind_b6(myInfo);
+const result_b6 = addMeInMyCrushMind_b6(myInfo_b6);
 // result_b6

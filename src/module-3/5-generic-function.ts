@@ -1,4 +1,4 @@
-// Arrow function
+//: Arrow function
 const createArray = (param: string): string[] => {
 	return [param];
 };
@@ -22,7 +22,7 @@ type Name = { name: string };
 
 const result3 = createArray1<Name, boolean>({ name: "Bangladesh" }, false);
 
-// Spread Operator
+//: Spread Operator
 
 // const newData = { ...myInfo, crush };
 const addMeInMyCrushMind = <T>(myInfo: T) => {

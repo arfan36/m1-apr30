@@ -1,6 +1,6 @@
-//# ------------------------------- keyof guard ------------------------------ */
+//: ------------------------------- keyof guard ------------------------------ */
 type Alphanumeric = string | number;
-function add(param1: Alphanumeric, param2: Alphanumeric): Alphanumeric {
+function add_c4(param1: Alphanumeric, param2: Alphanumeric): Alphanumeric {
 	if (typeof param1 === "number" && typeof param2 === "number") {
 		return param1 + param2;
 	} else {
@@ -8,10 +8,10 @@ function add(param1: Alphanumeric, param2: Alphanumeric): Alphanumeric {
 	}
 }
 
-add("1", "2");
-add(1, 2);
+add_c4("1", "2");
+add_c4(1, 2);
 
-//# -------------------------------- in guard -------------------------------- */
+//: -------------------------------- in guard -------------------------------- */
 type NormalUserType = {
 	name: string;
 };
@@ -35,7 +35,7 @@ const adminUser1: AdminUserType = { name: "Mr. Gallu", role: "admin" };
 console.log(getUser(normalUser1));
 console.log(getUser(adminUser1));
 
-//# ---------------------------- instanceof guard ---------------------------- */
+//: ---------------------------- instanceof guard ---------------------------- */
 class Animal_c4 {
 	name: string;
 	species: string;

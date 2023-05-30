@@ -13,8 +13,8 @@ type Volume = {
 // };
 
 type Area<T> = {
-	// [key in keyof Volume]: Volume[key]; // Volume['width'] --> number
-	readonly [key in keyof T]: T[key];
+	// [key in keyof Volume]: Volume[key]; //: Volume['width'] --> number (property value)
+	readonly [key in keyof T]: T[key]; //: [index in keyof Volume]
 };
 
 const area1: Area<{ height: number; width: string }> = {
@@ -40,8 +40,8 @@ const rectangularArea: AreaReadOnly = {
 
 // rectangularArea.width = 10;
 
-// type A = AreaNumber["height"]; // look up types
-// type B = AreaNumber; // 'width' | 'height
+// type A = AreaNumber["height"]; //: look up types > property value
+// type B = AreaNumber; //: 'width' | 'height
 
 const obj = {
 	name: "Persian",

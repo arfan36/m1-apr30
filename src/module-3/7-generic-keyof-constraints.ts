@@ -4,7 +4,7 @@ type PersonType = {
 	address: string;
 };
 
-type newType = "name" | "age" | "address"; // manually korchi
+type newType = "name" | "age" | "address"; // manually korchi (literal type)
 
 type newTypeUsingKeyOf = keyof PersonType;
 

@@ -17,7 +17,7 @@ class BankAccount_c6 {
 		return this.getTestBalance();
 	}
 
-	// getter
+	//, getter
 	get balance(): number {
 		return this._balance;
 	}
@@ -25,7 +25,7 @@ class BankAccount_c6 {
 	// 	return this._balance;
 	// }
 
-	// setter
+	//, setter
 	set deposit(amount: number) {
 		this._balance = this._balance + amount;
 	}
@@ -41,7 +41,6 @@ class StudentAccount_c6 extends BankAccount_c6 {
 }
 
 const myAccount_c6 = new BankAccount_c6(444, "Persian", 30);
-// myAccount.balance = 0;
 console.log(myAccount_c6.balance);
 myAccount_c6.deposit = 30;
 console.log(myAccount_c6.balance);

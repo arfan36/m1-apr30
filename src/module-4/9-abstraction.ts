@@ -35,7 +35,7 @@ class Car implements Vehicle {
 
 // const vehicle = new Vehicle("Car", "Toyota", 2000);
 
-// # abstract class
+//, abstract class
 
 // abstract class Vehicle {
 // 	constructor(

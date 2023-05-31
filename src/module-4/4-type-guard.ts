@@ -1,4 +1,4 @@
-//: ------------------------------- keyof guard ------------------------------ */
+//: ------------------------------- type of guard ------------------------------ */
 type Alphanumeric = string | number;
 function add_c4(param1: Alphanumeric, param2: Alphanumeric): Alphanumeric {
 	if (typeof param1 === "number" && typeof param2 === "number") {
@@ -35,7 +35,7 @@ const adminUser1: AdminUserType = { name: "Mr. Gallu", role: "admin" };
 console.log(getUser(normalUser1));
 console.log(getUser(adminUser1));
 
-//: ---------------------------- instanceof guard ---------------------------- */
+//: ---------------------------- instance of guard ---------------------------- */
 class Animal_c4 {
 	name: string;
 	species: string;
@@ -84,6 +84,16 @@ function getAnimal(animal: Animal_c4) {
 		animal.makeSound();
 	}
 }
+
+// function getAnimal(animal: Animal_c4) {
+// 	if (animal instanceof Dog) {
+// 		animal.makeBark();
+// 	} else if (animal instanceof Cat) {
+// 		animal.makeMeow();
+// 	} else {
+// 		animal.makeSound();
+// 	}
+// }
 
 const animal1 = new Dog("German Bhai", "dog"); // instance -> dog
 const animal2 = new Cat("Persian Bhai", "cat"); // instance -> cat

@@ -1,7 +1,7 @@
 class BankAccount {
 	public readonly id: number;
 	public name: string;
-	protected _balance: number;
+	protected _balance: number; //, by convention using `_` when private > protected in special case
 
 	constructor(id: number, name: string, balance: number) {
 		this.id = id;
@@ -23,5 +23,7 @@ class StudentAccount extends BankAccount {
 }
 
 const myAccount = new BankAccount(444, "Persian", 20);
-// myAccount.balance = 0;
+// myAccount._balance = 0;
 console.log(myAccount);
+myAccount.addDeposit(30);
+myAccount.getBalance();

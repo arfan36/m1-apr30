@@ -1,11 +1,11 @@
 //~ normal function
 //# default parameters
 
-function add(num1: number, num2: number = 10): number {
+function add_5a(num1: number, num2: number = 10): number {
 	return num1 + num2;
 }
 
-add(30, 50);
+add_5a(30, 50);
 
 //# spread operator
 const myFriends = ["chandler", "joey", "ross"];

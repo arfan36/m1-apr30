@@ -41,7 +41,7 @@ greatFriends(
 const arr = [1, 4, 5, 7];
 const newArray = arr.map((elem: number) => elem * elem);
 
-const person: {
+const person_m2: {
 	name: string;
 	balance: number;
 	addBalance(money: number): void;

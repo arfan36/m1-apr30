@@ -1,4 +1,4 @@
-class Person {
+class Person_m4 {
 	name: string;
 	age: number;
 	address: string;
@@ -14,7 +14,7 @@ class Person {
 	}
 }
 
-class Student extends Person {
+class Student extends Person_m4 {
 	constructor(name: string, age: number, address: string) {
 		super(name, age, address);
 	}
@@ -23,7 +23,7 @@ class Student extends Person {
 const student1 = new Student("Mr.X", 15, "Uganda");
 // student1.
 
-class Teacher extends Person {
+class Teacher extends Person_m4 {
 	designation: string;
 
 	constructor(name: string, age: number, address: string, designation: string) {

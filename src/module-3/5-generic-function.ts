@@ -18,9 +18,9 @@ function createArray2<X, Y>(param1: X, param2: Y): [X, Y] {
 const result1 = createArray1<string, string>("Bangladesh", "I love My Country");
 const result2 = createArray1<boolean, Array<string>>(false, ["USA"]);
 
-type Name = { name: string };
+type Name_m3 = { name: string };
 
-const result3 = createArray1<Name, boolean>({ name: "Bangladesh" }, false);
+const result3 = createArray1<Name_m3, boolean>({ name: "Bangladesh" }, false);
 
 //: Spread Operator
 

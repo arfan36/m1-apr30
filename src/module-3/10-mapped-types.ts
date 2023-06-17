@@ -43,7 +43,7 @@ const rectangularArea: AreaReadOnly = {
 // type A = AreaNumber["height"]; //: look up types > property value
 // type B = AreaNumber; //: 'width' | 'height
 
-const obj = {
+const obj_m3 = {
 	name: "Persian",
 };
-obj["name"]; // 'Persian'
+obj_m3["name"]; // 'Persian'

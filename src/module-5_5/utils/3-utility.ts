@@ -50,3 +50,4 @@ const obj: myObj = {
 };
 
 // check
+// check 2

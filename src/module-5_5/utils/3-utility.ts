@@ -48,3 +48,5 @@ const obj: myObj = {
 	c: "3",
 	d: "4",
 };
+
+// check
